@@ -1,0 +1,56 @@
+% From the assignment:
+utterance([the,soft,cat,ate,food]).
+utterance([the,cat,ate,delicious,food]).
+utterance([the,dog,barked,loudly]).
+utterance([he,ran,swiftly,and,gracefully]).
+utterance([the,blue,and,tall,man,played,music]).
+utterance([the,dog,and,cat,played]).
+utterance([for,five,years,the,man,ate,soup]).
+utterance([the,hat,is,on,the,cat]).
+utterance([the,cat,slept,and,the,dog,played]).
+utterance([the,robot,ate,food,but,the,dog,barked]).
+
+% Others that are positive:
+utterance([the,cat,ate]).
+utterance([the,cat,ate,the,dog]).
+utterance([the,blue,and,green,cat,ate]).
+utterance([the,blue,and,green,and,slow,cat,ate]).
+utterance([the,cat,ate,quickly]).
+utterance([the,dog,ate,the,food,loudly]).
+utterance([the,cat,gracefully,ate,the,food]).
+utterance([the,dog,loudly,barked]).
+utterance([the,cat,ate,quickly,and,slowly]).
+utterance([the,cat,ate,quickly,and,slowly,and,quickly]).
+utterance([the,cat,quickly,and,slowly,ate]).
+utterance([the,cat,quickly,and,slowly,ate,quickly]).
+utterance([the,blue,and,tall,man,played,blue,and,tall,music]).
+utterance([the,cat,ate,the,blue,man,quickly]).
+utterance([the,cat,and,the,dog,ate]).
+utterance([the,man,and,cat,ate]).
+utterance([the,cat,and,the,man,ate,the,blue,dog,and,the,man]).
+utterance([the,cat,ate,and,the,dog,barked]).
+utterance([the,cat,ate,and,the,dog,barked,and,the,tall,and,blue,man,barked,quickly]).
+utterance([for,five,years,the,cat,ate]).
+utterance([for,tall,years,the,cat,ate]).
+utterance([the,cat,ate,left,of,the,man]).
+utterance([the,cat,ate,to,the,left,of,the,man]).
+utterance([the,blue,robot,and,tall,man,loudly,and,gracefully,played,blue,music]).
+utterance([the,blue,robot,played,music,loudly]).
+
+% Negative queries (should return false)
+utterance([the,dog,ate,loudly,the,food]).
+utterance([the,quickly,cat,ate]).
+utterance([the,cat,quickly,and,the,man,ate,the,blue,dog,and,the,man]).
+utterance([and,the,man,ate,soup]).
+utterance([the,man,ate,soup,and]).
+utterance([the,dog,ate,swiftly,the,man]).
+
+%Prepositional phrases
+utterance([for,five,years,the,man,ate,soup]).
+utterance([the,hat,is,on,the,cat]).
+
+utterance([for,three,years,the,man,ate,soup]).
+utterance([for,five,weeks,the,man,ate,soup]).
+utterance([the,hat,is,under,the,cat]).
+utterance([the,hat,is,above,the,cat]).
+
